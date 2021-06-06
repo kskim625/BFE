@@ -12,9 +12,15 @@ h1{
 }
 #list{
   font-size:25px;
+  border-right:1px solid black;
 }
 #grid{
   display:grid;
+  grid-template-columns:150px 1fr;
+}
+#index_explanation{
+  padding:10px;
+  padding-left:30px;
 }
 a{
   color:black;
