@@ -46,3 +46,15 @@ a{
   left:10px;
   position:relative;
 }
+.player_search{
+  text-align:right;
+}
+.search{
+  display:inline;
+}
+.table{
+  display:inline-block;
+}
+.table_header{
+  font-size:20px;
+}
