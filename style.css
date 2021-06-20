@@ -21,6 +21,7 @@ h1{
   margin:0;
   border-right:1px solid black;
   height:100%;
+  width:150px;
 }
 #first_list{
   margin-top:10px;
@@ -30,6 +31,7 @@ h1{
   grid-template-columns:150px 1fr;
 }
 #index_explanation{
+  display:inline-block;
   padding:10px;
   padding-left:30px;
   height:100%;
@@ -50,11 +52,23 @@ a{
   text-align:right;
 }
 .search{
+  margin-top:10px;
   display:inline;
 }
-.table{
-  display:inline-block;
+.tables{
+  margin-top:20px;
+  width:900px;
+  table-layout:fixed;
 }
 .table_header{
+  background-color: grey;
+  color:white;
   font-size:20px;
+}
+.top_links{
+  text-align:center;
+}
+.top_links a{
+  margin-left:30px;
+  font-weight:bold;
 }
