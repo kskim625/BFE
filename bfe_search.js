@@ -1,30 +1,22 @@
-function getName(){
-  const name = document.getElementByID('search_text').value;
-  alert(name);
-  return name;
-}
-
 function search_goals(){
-  let name = getName();
-  alert(name);
-  window.open('search_goals.html')
-  document.getElementByClassName('text').innerText = name;
-  table = document.getElementByClassName('tables');
+  var current_page = window.location.href;
+  var name = document.getElementById('search_text').value;
 
+  if (current_page !== "file:///C:/Users/kskim/Desktop/web/BFE/search_goals.html"){
+    var new_page = window.open('search_goals.html');
+  }
 
-  for (let i = 0; i < table.rows.length; i++){
-    /*
-    playerName = player[i].getElementByClassName('player_name');
-    if (name === playerName){
-      player[i].style.color = 'yellow';
-      */
-    rIndex = this.rowindex;
-    var id = this.cells[2].textContent;
-    if (id === name){
-      alert(this.cells[0].textContent);
+  table = new_page.document.getElementById('tables');
+
+  var i, playerName, player;
+  player = new_page.document.getElementsByClassName('goalSearch');
+
+  for (i = 0; i < table.rows.length; i++){
+    playerName = player[i].getElementsByClassName('player_name');
+    if (playerName[0].innerHTML.toLowerCase().indexOf(name) != -1){
+      player[i].bgColor = 'yellow';
+    } else {
+      player[i].bgColor = 'white';
     }
-    else{
-      alert('none');
-    };
   }
 }
