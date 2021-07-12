@@ -43,6 +43,13 @@ a{
   color:black;
   text-decoration:none;
 }
+.search_link{
+  color:blue;
+  text-decoration: underline;
+}
+.vote{
+  padding: 10px;
+}
 .x_image{
   top:-30px;
   left:10px;
